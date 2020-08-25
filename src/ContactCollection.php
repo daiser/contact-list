@@ -1,12 +1,12 @@
 <?php
 
 
-namespace NoGePhone;
+namespace ContactList;
 
 
-use NoGePhone\Contracts\ContactCollectionInterface;
-use NoGePhone\Contracts\ContactInterface;
-use NoGePhone\Contracts\ContactOutputInterface;
+use ContactList\Contracts\ContactCollectionInterface;
+use ContactList\Contracts\ContactInterface;
+use ContactList\Contracts\ContactOutputInterface;
 use Webmozart\Assert\Assert;
 
 class ContactCollection implements ContactCollectionInterface {
@@ -25,6 +25,7 @@ class ContactCollection implements ContactCollectionInterface {
         foreach ($this->items as $contact) {
             echo "{$index}. ";
             $contact->show($output);
+            $index++;
         }
     }
 

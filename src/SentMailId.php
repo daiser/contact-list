@@ -1,10 +1,10 @@
 <?php
 
 
-namespace NoGePhone;
+namespace ContactList;
 
 
-use NoGePhone\Contracts\SentEmailIdInterface;
+use ContactList\Contracts\SentEmailIdInterface;
 
 class SentMailId extends AbstractIdent implements SentEmailIdInterface {
     protected $description = 'Отправлено электронное письмо';

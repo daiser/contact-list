@@ -1,8 +1,8 @@
 <?php
 
-namespace NoGePhone;
+namespace ContactList;
 
-use NoGePhone\Contracts\SentMessageIdInterface;
+use ContactList\Contracts\SentMessageIdInterface;
 
 class SentMessageId extends AbstractIdent implements SentMessageIdInterface {
     protected $description = 'Отправлена СМСка';

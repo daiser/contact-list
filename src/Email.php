@@ -1,12 +1,12 @@
 <?php
 
 
-namespace NoGePhone;
+namespace ContactList;
 
 
-use NoGePhone\Contracts\EmailInterface;
-use NoGePhone\Contracts\SentEmailIdInterface;
-use NoGePhone\Contracts\SmtpProviderInterface;
+use ContactList\Contracts\EmailInterface;
+use ContactList\Contracts\SentEmailIdInterface;
+use ContactList\Contracts\SmtpProviderInterface;
 
 class Email implements EmailInterface {
     private $email;

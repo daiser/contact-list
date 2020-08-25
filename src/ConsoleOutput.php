@@ -1,10 +1,10 @@
 <?php
 
 
-namespace NoGePhone;
+namespace ContactList;
 
 
-use NoGePhone\Contracts\ContactOutputInterface;
+use ContactList\Contracts\ContactOutputInterface;
 
 class ConsoleOutput implements ContactOutputInterface {
     function output(string $contactName): void {

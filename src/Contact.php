@@ -1,16 +1,16 @@
 <?php
 
 
-namespace NoGePhone;
+namespace ContactList;
 
 
-use NoGePhone\Contracts\ContactInterface;
-use NoGePhone\Contracts\ContactOutputInterface;
-use NoGePhone\Contracts\EmailInterface;
-use NoGePhone\Contracts\PhoneInterface;
-use NoGePhone\Contracts\SipProviderInterface;
-use NoGePhone\Contracts\SmsAggregatorInterface;
-use NoGePhone\Contracts\SmtpProviderInterface;
+use ContactList\Contracts\ContactInterface;
+use ContactList\Contracts\ContactOutputInterface;
+use ContactList\Contracts\EmailInterface;
+use ContactList\Contracts\PhoneInterface;
+use ContactList\Contracts\SipProviderInterface;
+use ContactList\Contracts\SmsAggregatorInterface;
+use ContactList\Contracts\SmtpProviderInterface;
 
 class Contact implements ContactInterface {
     /** @var string */

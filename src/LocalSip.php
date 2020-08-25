@@ -1,11 +1,11 @@
 <?php
 
 
-namespace NoGePhone;
+namespace ContactList;
 
 
-use NoGePhone\Contracts\CallIdInterface;
-use NoGePhone\Contracts\SipProviderInterface;
+use ContactList\Contracts\CallIdInterface;
+use ContactList\Contracts\SipProviderInterface;
 
 class LocalSip implements SipProviderInterface {
 

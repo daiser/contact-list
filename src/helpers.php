@@ -1,6 +1,6 @@
 <?php
 
-namespace NoGePhone;
+namespace ContactList;
 
 function get_rand_str(int $length) {
     $chars  = array_merge(range('a', 'z'), range('A', 'Z'), ['!', '@', '#', '$', '%', '&', '*']);

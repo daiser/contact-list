@@ -1,11 +1,11 @@
 <?php
 
 
-namespace NoGePhone;
+namespace ContactList;
 
 
-use NoGePhone\Contracts\SentMessageIdInterface;
-use NoGePhone\Contracts\SmsAggregatorInterface;
+use ContactList\Contracts\SentMessageIdInterface;
+use ContactList\Contracts\SmsAggregatorInterface;
 
 class MTS implements SmsAggregatorInterface {
     function sendMessage(string $phoneNumber, string $message): SentMessageIdInterface {

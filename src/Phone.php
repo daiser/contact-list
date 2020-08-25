@@ -1,14 +1,14 @@
 <?php
 
 
-namespace NoGePhone;
+namespace ContactList;
 
 
-use NoGePhone\Contracts\CallIdInterface;
-use NoGePhone\Contracts\PhoneInterface;
-use NoGePhone\Contracts\SentMessageIdInterface;
-use NoGePhone\Contracts\SipProviderInterface;
-use NoGePhone\Contracts\SmsAggregatorInterface;
+use ContactList\Contracts\CallIdInterface;
+use ContactList\Contracts\PhoneInterface;
+use ContactList\Contracts\SentMessageIdInterface;
+use ContactList\Contracts\SipProviderInterface;
+use ContactList\Contracts\SmsAggregatorInterface;
 
 class Phone implements PhoneInterface {
     private $number;

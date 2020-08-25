@@ -1,10 +1,10 @@
 <?php
 
 
-namespace NoGePhone;
+namespace ContactList;
 
 
-use NoGePhone\Contracts\LogInterface;
+use ContactList\Contracts\LogInterface;
 
 class NullLog implements LogInterface {
     function store(string $sentIdent, string $description) { }

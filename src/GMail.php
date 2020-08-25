@@ -1,11 +1,11 @@
 <?php
 
 
-namespace NoGePhone;
+namespace ContactList;
 
 
-use NoGePhone\Contracts\SentEmailIdInterface;
-use NoGePhone\Contracts\SmtpProviderInterface;
+use ContactList\Contracts\SentEmailIdInterface;
+use ContactList\Contracts\SmtpProviderInterface;
 
 class GMail implements SmtpProviderInterface {
     function sendMail(string $address, string $subject, string $body): SentEmailIdInterface {

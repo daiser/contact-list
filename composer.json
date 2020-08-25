@@ -1,5 +1,5 @@
 {
-  "name":        "daiser/nogephone",
+  "name":        "daiser/contact-list",
   "description": "Working contact list without any getters",
   "authors":     [
     {
@@ -19,7 +19,7 @@
   },
   "autoload":    {
     "psr-4": {
-      "NoGePhone\\": "src/"
+      "ContactList\\": "src/"
     },
     "files": [
       "src/helpers.php"

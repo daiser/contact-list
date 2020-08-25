@@ -1,5 +1,5 @@
 <?php
 
-namespace NoGePhone\Contracts;
+namespace ContactList\Contracts;
 
 interface CallIdInterface extends IdentInterface { }

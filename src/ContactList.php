@@ -1,14 +1,14 @@
 <?php
 
 
-namespace NoGePhone;
+namespace ContactList;
 
 
-use NoGePhone\Contracts\ContactInterface;
-use NoGePhone\Contracts\ContactListInterface;
+use ContactList\Contracts\ContactInterface;
+use ContactList\Contracts\ContactListInterface;
 
 class ContactList extends ContactCollection implements ContactListInterface {
-    public function __construct(array $items) { parent::__construct($items); }
+    public function __construct(array $items = []) { parent::__construct($items); }
 
 
     function addContact(ContactInterface $contact): int {

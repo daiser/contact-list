@@ -1,11 +1,11 @@
 <?php
 
 
-namespace NoGePhone;
+namespace ContactList;
 
 
-use NoGePhone\Contracts\IdentInterface;
-use NoGePhone\Contracts\LogInterface;
+use ContactList\Contracts\IdentInterface;
+use ContactList\Contracts\LogInterface;
 
 abstract class AbstractIdent implements IdentInterface {
     protected $id;
