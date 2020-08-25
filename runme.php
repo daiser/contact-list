@@ -4,26 +4,21 @@ namespace ContactList;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$log    = new ConsoleLog();
+$log = new ConsoleLog();
 $smsAgg = new Megafon();
-$out    = new ConsoleOutput();
+$out = new ConsoleOutput();
 
 $list = new ContactList([]);
 
 $list->addContact(
-    new Contact(
-        'Alice', [
-        new Phone('111-11'),
-        new Phone('111-22')
-    ], [new Email('alice@example.com')]
-    )
+    new Contact('Alice', [new Phone('111-11'), new Phone('111-22')], [new Email('alice@example.com')])
 );
 $list->addContact(
     new Contact(
-        'Bob', [
-        new Phone('222-11'),
-        new Phone('222-22')
-    ], [new Email('bob@example.com'), new Email('mega-bob@example.com')]
+        'Bob', [new Phone('222-11'), new Phone('222-22')], [
+            new Email('bob@example.com'),
+            new Email('mega-bob@example.com')
+        ]
     )
 );
 
