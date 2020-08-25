@@ -13,12 +13,16 @@
     "email": "rk@316.su"
   },
   "require":     {
-    "php": "^7.2"
+    "php":          "^7.2",
+    "ext-mbstring": "*"
   },
   "autoload":    {
     "psr-4": {
       "NoGePhone\\": "src/"
-    }
+    },
+    "files": [
+      "src/helpers.php"
+    ]
   },
   "require-dev": {
   }

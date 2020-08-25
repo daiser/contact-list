@@ -5,5 +5,5 @@ namespace NoGePhone\Contracts;
 
 
 interface IdentInterface {
-    function getId():string;
+    function store(LogInterface $log):void;
 }
