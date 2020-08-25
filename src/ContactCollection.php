@@ -11,8 +11,8 @@ use Webmozart\Assert\Assert;
 
 class ContactCollection implements ContactCollectionInterface {
     /** @var ContactInterface[] */
-    private $items;
-    private $position = 0;
+    protected $items;
+    private   $position = 0;
 
 
     function __construct(array $items) {
