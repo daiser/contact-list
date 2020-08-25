@@ -1,0 +1,25 @@
+{
+  "name":        "daiser/nogephone",
+  "description": "Working contact list without any getters",
+  "authors":     [
+    {
+      "name":     "Roman Kvitkov",
+      "email":    "rk@316.su",
+      "homepage": "http://316.su",
+      "role":     "Developer"
+    }
+  ],
+  "support":     {
+    "email": "rk@316.su"
+  },
+  "require":     {
+    "php": "^7.2"
+  },
+  "autoload":    {
+    "psr-4": {
+      "NoGePgone\\": "src/"
+    }
+  },
+  "require-dev": {
+  }
+}
