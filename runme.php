@@ -2,7 +2,7 @@
 
 namespace ContactList;
 
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 $log    = new ConsoleLog();
 $smsAgg = new Megafon();
