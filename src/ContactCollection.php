@@ -23,9 +23,7 @@ class ContactCollection implements ContactCollectionInterface {
     function show(ContactOutputInterface $output): void {
         $index = 1;
         foreach ($this->items as $contact) {
-            echo "{$index}. ";
-            $contact->show($output);
-            $index++;
+            $contact->showNext($output,$index++);
         }
     }
 

@@ -32,6 +32,10 @@ class Contact implements ContactInterface {
         $output->output($this->name);
     }
 
+    public function showNext(ContactOutputInterface $output, int $index): void {
+        $output->outputNext($this->name, $index);
+    }
+
 
     function areYou(string $needle): bool {
         return $this->name === $needle;

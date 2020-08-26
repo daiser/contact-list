@@ -36,4 +36,11 @@ interface ContactInterface extends PersonInterface {
      * @param ContactOutputInterface $output
      */
     function show(ContactOutputInterface $output): void;
+
+
+    /**
+     * @param ContactOutputInterface $output
+     * @param int                    $index
+     */
+    function showNext(ContactOutputInterface $output, int $index): void;
 }
