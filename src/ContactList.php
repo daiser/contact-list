@@ -13,8 +13,9 @@ class ContactList extends ContactCollection implements ContactListInterface {
 
     function addContact(ContactInterface $contact): int {
         $this->items[] = $contact;
+        $keys = array_keys($this->items);
 
-        return count($this->items) - 1;
+        return array_pop($keys);
     }
 
 
