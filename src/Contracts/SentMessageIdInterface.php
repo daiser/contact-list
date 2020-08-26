@@ -2,4 +2,4 @@
 
 namespace ContactList\Contracts;
 
-interface SentMessageIdInterface extends IdentInterface { }
+interface SentMessageIdInterface extends IdInterface { }

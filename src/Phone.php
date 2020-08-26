@@ -24,7 +24,7 @@ class Phone implements PhoneInterface {
     }
 
 
-    function sentText(SmsAggregatorInterface $aggregator, string $text): SentMessageIdInterface {
+    function sendText(SmsAggregatorInterface $aggregator, string $text): SentMessageIdInterface {
         return $aggregator->sendMessage($this->number, $text);
     }
 }

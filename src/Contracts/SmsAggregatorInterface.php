@@ -5,5 +5,5 @@ namespace ContactList\Contracts;
 
 
 interface SmsAggregatorInterface {
-    function sendMessage(string $phoneNumber, string $message):SentMessageIdInterface;
+    function sendMessage(string $phoneNumber, string $message): SentMessageIdInterface;
 }

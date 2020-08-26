@@ -8,8 +8,8 @@ use DateTime;
 use ContactList\Contracts\LogInterface;
 
 class ConsoleLog implements LogInterface {
-    function store(string $sentIdent, string $description) {
+    function store(string $sentId, string $description): void {
         $now = (new DateTime())->format('d.m.Y H:i:s.u');
-        echo "Log: {$now} {$description} (id={$sentIdent})" . PHP_EOL;
+        echo "Log: {$now} {$description} (id={$sentId})" . PHP_EOL;
     }
 }

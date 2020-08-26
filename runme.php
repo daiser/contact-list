@@ -36,5 +36,5 @@ echo PHP_EOL;
 foreach ($list as $contact) {
     $ids = $contact->sendText($smsAgg, 'Привет! Приходи в гости.');
     foreach ($ids as $id)
-        $id->store($log);
+        $id->saveTo($log);
 }

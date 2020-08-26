@@ -2,4 +2,4 @@
 
 namespace ContactList\Contracts;
 
-interface CallIdInterface extends IdentInterface { }
+interface CallIdInterface extends IdInterface { }

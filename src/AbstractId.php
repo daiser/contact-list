@@ -4,10 +4,10 @@
 namespace ContactList;
 
 
-use ContactList\Contracts\IdentInterface;
+use ContactList\Contracts\IdInterface;
 use ContactList\Contracts\LogInterface;
 
-abstract class AbstractIdent implements IdentInterface {
+abstract class AbstractId implements IdInterface {
     protected $id;
     protected $description = 'default description';
 
@@ -17,7 +17,7 @@ abstract class AbstractIdent implements IdentInterface {
     }
 
 
-    public function store(LogInterface $log): void {
+    public function saveTo(LogInterface $log): void {
         $log->store($this->id, $this->description);
     }
 }

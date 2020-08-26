@@ -5,5 +5,5 @@ namespace ContactList\Contracts;
 
 
 interface LogInterface {
-    function store(string $sentIdent, string $description);
+    function store(string $sentId, string $description): void;
 }

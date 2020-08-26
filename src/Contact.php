@@ -45,25 +45,20 @@ class Contact implements ContactInterface {
 
     function sendMail(SmtpProviderInterface $provider, string $subject, string $body): array {
         return array_map(
-            function($email) use (
-                $provider,
-                $subject,
-                $body
-            ) {
+            function($email) use ($provider, $subject, $body) {
                 return $email->sendMail($provider, $subject, $body);
-            }, $this->emails
+            },
+            $this->emails
         );
     }
 
 
     function sendText(SmsAggregatorInterface $aggregator, string $message): array {
         return array_map(
-            function($phone) use (
-                $aggregator,
-                $message
-            ) {
-                return $phone->sentText($aggregator, $message);
-            }, $this->phones
+            function($phone) use ($aggregator, $message) {
+                return $phone->sendText($aggregator, $message);
+            },
+            $this->phones
         );
     }
 }

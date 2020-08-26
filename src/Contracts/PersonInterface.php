@@ -5,5 +5,5 @@ namespace ContactList\Contracts;
 
 
 interface PersonInterface {
-    function areYou(string $needle):bool;
+    function areYou(string $needle): bool;
 }

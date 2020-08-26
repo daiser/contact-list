@@ -5,5 +5,5 @@ namespace ContactList\Contracts;
 
 
 interface SipProviderInterface {
-    function makeCall(string $phoneNumber):CallIdInterface;
+    function makeCall(string $phoneNumber): CallIdInterface;
 }
