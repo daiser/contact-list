@@ -33,9 +33,10 @@ class ContactCollection implements ContactCollectionInterface {
     function find(string $needle): ContactCollectionInterface {
         return new self(
             array_filter(
-                $this->items, function($contact) use ($needle) {
-                return $contact->areYou($needle);
-            }
+                $this->items,
+                function($contact) use ($needle) {
+                    return $contact->areYou($needle);
+                }
             )
         );
     }
