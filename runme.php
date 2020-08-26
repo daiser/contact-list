@@ -4,20 +4,20 @@ namespace ContactList;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$log = new ConsoleLog();
-$smsAgg = new Megafon();
-$out = new ConsoleOutput();
+$log           = new ConsoleLog();
+$smsAggregator = new Megafon();
+$output        = new ConsoleOutput();
 
-$list = new ContactList([]);
+$contacts = new ContactList();
 
-$list->addContact(
+$contacts->addContact(
     new Contact(
         'Alice',
         [new Phone('111-11'), new Phone('111-22')],
         [new Email('alice@example.com')]
     )
 );
-$list->addContact(
+$contacts->addContact(
     new Contact(
         'Bob',
         [new Phone('222-11'), new Phone('222-22')],
@@ -26,15 +26,15 @@ $list->addContact(
 );
 
 echo "Контакты:" . PHP_EOL;
-$list->show($out);
+$contacts->show($output);
 echo PHP_EOL;
 
 echo "Ищем 'Alice'" . PHP_EOL;
-$list->find('Alice')->show($out);
+$contacts->find('Alice')->show($output);
 echo PHP_EOL;
 
-foreach ($list as $contact) {
-    $ids = $contact->sendText($smsAgg, 'Привет! Приходи в гости.');
-    foreach ($ids as $id)
-        $id->saveTo($log);
+foreach ($contacts as $contact) {
+    $sentIds = $contact->sendText($smsAggregator, 'Привет! Приходи в гости в субботу.');
+    foreach ($sentIds as $sentId)
+        $sentId->saveTo($log);
 }
