@@ -12,7 +12,7 @@ class ConsoleOutput implements ContactOutputInterface {
     }
 
 
-    public function outputNext(string $contactName, int $index): void {
+    public function outputListItem(int $index, string $contactName): void {
         echo "{$index}. {$contactName}" . PHP_EOL;
     }
 }

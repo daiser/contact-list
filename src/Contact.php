@@ -32,8 +32,8 @@ class Contact implements ContactInterface {
         $output->output($this->name);
     }
 
-    public function showNext(ContactOutputInterface $output, int $index): void {
-        $output->outputNext($this->name, $index);
+    public function showNext(int $index, ContactOutputInterface $output): void {
+        $output->outputListItem($index, $this->name);
     }
 
 
