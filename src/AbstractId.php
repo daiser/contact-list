@@ -16,10 +16,10 @@ abstract class AbstractId implements IdInterface {
     }
 
 
-    protected abstract function getDescription(): string;
+    protected abstract function describe(): string;
 
 
     public function saveTo(LogInterface $log): void {
-        $log->store($this->id, $this->getDescription());
+        $log->store($this->id, $this->describe());
     }
 }

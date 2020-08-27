@@ -8,7 +8,7 @@ class CallId extends AbstractId implements CallIdInterface {
     private const DESCRIPTION = 'Состоялся звонок';
 
 
-    protected function getDescription(): string {
+    protected function describe(): string {
         return self::DESCRIPTION;
     }
 }

@@ -10,7 +10,7 @@ class SentMailId extends AbstractId implements SentEmailIdInterface {
     private const DESCRIPTION = 'Отправлено электронное письмо';
 
 
-    protected function getDescription(): string {
+    protected function describe(): string {
         return self::DESCRIPTION;
     }
 }

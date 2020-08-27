@@ -8,7 +8,7 @@ class SentMessageId extends AbstractId implements SentMessageIdInterface {
     private const DESCRIPTION = 'Отправлена СМСка';
 
 
-    protected function getDescription(): string {
+    protected function describe(): string {
         return self::DESCRIPTION;
     }
 }
